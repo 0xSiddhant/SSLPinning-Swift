@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		73540D9E3869B2357793C7ED /* Pods_PublicKey_Pinning_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44AC0B0ACCA5886EF844F2F /* Pods_PublicKey_Pinning_Swift.framework */; };
+		9CDE32D2299CEA0000F6BC10 /* AlamofirePublicKeyPinning_UsingKeyOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE32D1299CEA0000F6BC10 /* AlamofirePublicKeyPinning_UsingKeyOnly.swift */; };
+		9CDE32D5299CF0C800F6BC10 /* SecKeyGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE32D4299CF0C800F6BC10 /* SecKeyGenerator.swift */; };
+		9CDE32D7299CF2F900F6BC10 /* AlamofirePublicKeyPinning_UsingMethodOverride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE32D6299CF2F900F6BC10 /* AlamofirePublicKeyPinning_UsingMethodOverride.swift */; };
+		9CDE32D9299CF68200F6BC10 /* CustomServerTrustMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE32D8299CF68200F6BC10 /* CustomServerTrustMananger.swift */; };
+		9CDE32DB299CF69A00F6BC10 /* RestrictionEvalutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE32DA299CF69A00F6BC10 /* RestrictionEvalutor.swift */; };
 		9CE4BAC8299CE794005F6B2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE4BAC7299CE794005F6B2C /* AppDelegate.swift */; };
 		9CE4BACA299CE794005F6B2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE4BAC9299CE794005F6B2C /* SceneDelegate.swift */; };
 		9CE4BACC299CE794005F6B2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE4BACB299CE794005F6B2C /* ViewController.swift */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9CDE32D1299CEA0000F6BC10 /* AlamofirePublicKeyPinning_UsingKeyOnly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofirePublicKeyPinning_UsingKeyOnly.swift; sourceTree = "<group>"; };
+		9CDE32D4299CF0C800F6BC10 /* SecKeyGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecKeyGenerator.swift; sourceTree = "<group>"; };
+		9CDE32D6299CF2F900F6BC10 /* AlamofirePublicKeyPinning_UsingMethodOverride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofirePublicKeyPinning_UsingMethodOverride.swift; sourceTree = "<group>"; };
+		9CDE32D8299CF68200F6BC10 /* CustomServerTrustMananger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomServerTrustMananger.swift; sourceTree = "<group>"; };
+		9CDE32DA299CF69A00F6BC10 /* RestrictionEvalutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictionEvalutor.swift; sourceTree = "<group>"; };
 		9CE4BAC4299CE794005F6B2C /* PublicKey-Pinning_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PublicKey-Pinning_Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE4BAC7299CE794005F6B2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CE4BAC9299CE794005F6B2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +60,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9CDE32D0299CE9EE00F6BC10 /* PublicKeyPinning */ = {
+			isa = PBXGroup;
+			children = (
+				9CDE32D1299CEA0000F6BC10 /* AlamofirePublicKeyPinning_UsingKeyOnly.swift */,
+				9CDE32D6299CF2F900F6BC10 /* AlamofirePublicKeyPinning_UsingMethodOverride.swift */,
+				9CDE32D8299CF68200F6BC10 /* CustomServerTrustMananger.swift */,
+				9CDE32DA299CF69A00F6BC10 /* RestrictionEvalutor.swift */,
+			);
+			path = PublicKeyPinning;
+			sourceTree = "<group>";
+		};
+		9CDE32D3299CF0AA00F6BC10 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				9CDE32D4299CF0C800F6BC10 /* SecKeyGenerator.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		9CE4BABB299CE794005F6B2C = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +100,8 @@
 		9CE4BAC6299CE794005F6B2C /* PublicKey-Pinning_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				9CDE32D3299CF0AA00F6BC10 /* Shared */,
+				9CDE32D0299CE9EE00F6BC10 /* PublicKeyPinning */,
 				9CE4BAC7299CE794005F6B2C /* AppDelegate.swift */,
 				9CE4BAC9299CE794005F6B2C /* SceneDelegate.swift */,
 				9CE4BACB299CE794005F6B2C /* ViewController.swift */,
@@ -88,7 +119,6 @@
 				F481A9E0AE3CD6F8824DE012 /* Pods-PublicKey-Pinning_Swift.debug.xcconfig */,
 				AF5FDDAC277B51E27C5E3355 /* Pods-PublicKey-Pinning_Swift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,7 +237,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CDE32D5299CF0C800F6BC10 /* SecKeyGenerator.swift in Sources */,
 				9CE4BACC299CE794005F6B2C /* ViewController.swift in Sources */,
+				9CDE32D2299CEA0000F6BC10 /* AlamofirePublicKeyPinning_UsingKeyOnly.swift in Sources */,
+				9CDE32D9299CF68200F6BC10 /* CustomServerTrustMananger.swift in Sources */,
+				9CDE32DB299CF69A00F6BC10 /* RestrictionEvalutor.swift in Sources */,
+				9CDE32D7299CF2F900F6BC10 /* AlamofirePublicKeyPinning_UsingMethodOverride.swift in Sources */,
 				9CE4BAC8299CE794005F6B2C /* AppDelegate.swift in Sources */,
 				9CE4BACA299CE794005F6B2C /* SceneDelegate.swift in Sources */,
 			);
