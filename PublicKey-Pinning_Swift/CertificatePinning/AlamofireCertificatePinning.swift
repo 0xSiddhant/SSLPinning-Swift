@@ -14,6 +14,8 @@ class NetworkManagerCertificatePinning {
     private init() {
         session = Session(
           serverTrustManager: CertificateServerTrustManager()
+//            serverTrustManager: ["abc.com": PinnedCertificatesTrustEvaluator(),
+//                                 "xyz.com": PinnedCertificatesTrustEvaluator()]
         )
     }
     

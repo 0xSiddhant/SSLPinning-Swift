@@ -30,6 +30,7 @@ final class CustomServerTrustMananger: ServerTrustManager {
             // Certificate can be in .cer, .der, etc format.
             policy = PublicKeysTrustEvaluator(keys: Bundle.main.af.publicKeys)
         } else if host.contains("ssl.com") {
+            // bypassing ssl pinning for the host which contains this url.
             return nil
         } else {
             policy = RestrictionEvalutor()
