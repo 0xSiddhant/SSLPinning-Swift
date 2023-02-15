@@ -13,6 +13,8 @@
 		9CDE32D7299CF2F900F6BC10 /* AlamofirePublicKeyPinning_UsingMethodOverride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE32D6299CF2F900F6BC10 /* AlamofirePublicKeyPinning_UsingMethodOverride.swift */; };
 		9CDE32D9299CF68200F6BC10 /* CustomServerTrustMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE32D8299CF68200F6BC10 /* CustomServerTrustMananger.swift */; };
 		9CDE32DB299CF69A00F6BC10 /* RestrictionEvalutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE32DA299CF69A00F6BC10 /* RestrictionEvalutor.swift */; };
+		9CDE32DE299CFAE500F6BC10 /* AlamofireCertificatePinning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE32DD299CFAE500F6BC10 /* AlamofireCertificatePinning.swift */; };
+		9CDE32E0299CFB1900F6BC10 /* CertificateServerTrustManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE32DF299CFB1900F6BC10 /* CertificateServerTrustManager.swift */; };
 		9CE4BAC8299CE794005F6B2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE4BAC7299CE794005F6B2C /* AppDelegate.swift */; };
 		9CE4BACA299CE794005F6B2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE4BAC9299CE794005F6B2C /* SceneDelegate.swift */; };
 		9CE4BACC299CE794005F6B2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE4BACB299CE794005F6B2C /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 		9CDE32D6299CF2F900F6BC10 /* AlamofirePublicKeyPinning_UsingMethodOverride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofirePublicKeyPinning_UsingMethodOverride.swift; sourceTree = "<group>"; };
 		9CDE32D8299CF68200F6BC10 /* CustomServerTrustMananger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomServerTrustMananger.swift; sourceTree = "<group>"; };
 		9CDE32DA299CF69A00F6BC10 /* RestrictionEvalutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictionEvalutor.swift; sourceTree = "<group>"; };
+		9CDE32DD299CFAE500F6BC10 /* AlamofireCertificatePinning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireCertificatePinning.swift; sourceTree = "<group>"; };
+		9CDE32DF299CFB1900F6BC10 /* CertificateServerTrustManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateServerTrustManager.swift; sourceTree = "<group>"; };
 		9CE4BAC4299CE794005F6B2C /* PublicKey-Pinning_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PublicKey-Pinning_Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE4BAC7299CE794005F6B2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CE4BAC9299CE794005F6B2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +83,15 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		9CDE32DC299CF87A00F6BC10 /* CertificatePinning */ = {
+			isa = PBXGroup;
+			children = (
+				9CDE32DD299CFAE500F6BC10 /* AlamofireCertificatePinning.swift */,
+				9CDE32DF299CFB1900F6BC10 /* CertificateServerTrustManager.swift */,
+			);
+			path = CertificatePinning;
+			sourceTree = "<group>";
+		};
 		9CE4BABB299CE794005F6B2C = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +113,7 @@
 		9CE4BAC6299CE794005F6B2C /* PublicKey-Pinning_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				9CDE32DC299CF87A00F6BC10 /* CertificatePinning */,
 				9CDE32D3299CF0AA00F6BC10 /* Shared */,
 				9CDE32D0299CE9EE00F6BC10 /* PublicKeyPinning */,
 				9CE4BAC7299CE794005F6B2C /* AppDelegate.swift */,
@@ -240,8 +254,10 @@
 				9CDE32D5299CF0C800F6BC10 /* SecKeyGenerator.swift in Sources */,
 				9CE4BACC299CE794005F6B2C /* ViewController.swift in Sources */,
 				9CDE32D2299CEA0000F6BC10 /* AlamofirePublicKeyPinning_UsingKeyOnly.swift in Sources */,
+				9CDE32E0299CFB1900F6BC10 /* CertificateServerTrustManager.swift in Sources */,
 				9CDE32D9299CF68200F6BC10 /* CustomServerTrustMananger.swift in Sources */,
 				9CDE32DB299CF69A00F6BC10 /* RestrictionEvalutor.swift in Sources */,
+				9CDE32DE299CFAE500F6BC10 /* AlamofireCertificatePinning.swift in Sources */,
 				9CDE32D7299CF2F900F6BC10 /* AlamofirePublicKeyPinning_UsingMethodOverride.swift in Sources */,
 				9CE4BAC8299CE794005F6B2C /* AppDelegate.swift in Sources */,
 				9CE4BACA299CE794005F6B2C /* SceneDelegate.swift in Sources */,
