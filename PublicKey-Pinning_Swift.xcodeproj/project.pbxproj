@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		73540D9E3869B2357793C7ED /* Pods_PublicKey_Pinning_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44AC0B0ACCA5886EF844F2F /* Pods_PublicKey_Pinning_Swift.framework */; };
 		9C6209AA29A5E50B00F142C9 /* URLSessionCertificatePinning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6209A929A5E50B00F142C9 /* URLSessionCertificatePinning.swift */; };
+		9CD6E0702F1D2C9400108ECA /* SecureSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD6E06F2F1D2C9400108ECA /* SecureSessionDelegate.swift */; };
 		9CDE32D2299CEA0000F6BC10 /* AlamofirePublicKeyPinning_UsingKeyOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE32D1299CEA0000F6BC10 /* AlamofirePublicKeyPinning_UsingKeyOnly.swift */; };
 		9CDE32D5299CF0C800F6BC10 /* SecKeyGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE32D4299CF0C800F6BC10 /* SecKeyGenerator.swift */; };
 		9CDE32D7299CF2F900F6BC10 /* AlamofirePublicKeyPinning_UsingMethodOverride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE32D6299CF2F900F6BC10 /* AlamofirePublicKeyPinning_UsingMethodOverride.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		9C6209A929A5E50B00F142C9 /* URLSessionCertificatePinning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionCertificatePinning.swift; sourceTree = "<group>"; };
+		9CD6E06F2F1D2C9400108ECA /* SecureSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureSessionDelegate.swift; sourceTree = "<group>"; };
 		9CDE32D1299CEA0000F6BC10 /* AlamofirePublicKeyPinning_UsingKeyOnly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofirePublicKeyPinning_UsingKeyOnly.swift; sourceTree = "<group>"; };
 		9CDE32D4299CF0C800F6BC10 /* SecKeyGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecKeyGenerator.swift; sourceTree = "<group>"; };
 		9CDE32D6299CF2F900F6BC10 /* AlamofirePublicKeyPinning_UsingMethodOverride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofirePublicKeyPinning_UsingMethodOverride.swift; sourceTree = "<group>"; };
@@ -64,6 +66,13 @@
 				D44AC0B0ACCA5886EF844F2F /* Pods_PublicKey_Pinning_Swift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CD6E0712F1D2D0900108ECA /* mTLSPinning */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mTLSPinning;
 			sourceTree = "<group>";
 		};
 		9CDE32D0299CE9EE00F6BC10 /* PublicKeyPinning */ = {
@@ -116,6 +125,8 @@
 		9CE4BAC6299CE794005F6B2C /* PublicKey-Pinning_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				9CD6E0712F1D2D0900108ECA /* mTLSPinning */,
+				9CD6E06F2F1D2C9400108ECA /* SecureSessionDelegate.swift */,
 				9CDE32DC299CF87A00F6BC10 /* CertificatePinning */,
 				9CDE32D3299CF0AA00F6BC10 /* Shared */,
 				9CDE32D0299CE9EE00F6BC10 /* PublicKeyPinning */,
@@ -216,9 +227,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PublicKey-Pinning_Swift/Pods-PublicKey-Pinning_Swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PublicKey-Pinning_Swift/Pods-PublicKey-Pinning_Swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -254,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD6E0702F1D2C9400108ECA /* SecureSessionDelegate.swift in Sources */,
 				9CDE32D5299CF0C800F6BC10 /* SecKeyGenerator.swift in Sources */,
 				9C6209AA29A5E50B00F142C9 /* URLSessionCertificatePinning.swift in Sources */,
 				9CE4BACC299CE794005F6B2C /* ViewController.swift in Sources */,
